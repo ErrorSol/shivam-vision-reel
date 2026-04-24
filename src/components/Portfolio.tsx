@@ -7,6 +7,7 @@ import p4 from "@/assets/portfolio-4.jpg";
 import p5 from "@/assets/portfolio-5.jpg";
 import p6 from "@/assets/portfolio-6.jpg";
 import brandFilm from "@/assets/brand-film.mp4";
+import shortFilm from "@/assets/short-film.mp4";
 import { cn } from "@/lib/utils";
 
 type Category = "all" | "brand" | "personal" | "social";
@@ -24,11 +25,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "Neon Nights",
-    description: "An atmospheric short capturing urban mood through color and contrast.",
+    title: "Short Film",
+    description: "Short film made with iPhone.",
     role: "Director · Editor",
     category: "personal" as Category,
     image: p2,
+    video: shortFilm,
     type: "Short Film",
   },
   {

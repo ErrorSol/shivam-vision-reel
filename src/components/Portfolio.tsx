@@ -6,6 +6,7 @@ import p3 from "@/assets/portfolio-3.jpg";
 import p4 from "@/assets/portfolio-4.jpg";
 import p5 from "@/assets/portfolio-5.jpg";
 import p6 from "@/assets/portfolio-6.jpg";
+import brandFilm from "@/assets/brand-film.mp4";
 import { cn } from "@/lib/utils";
 
 type Category = "all" | "brand" | "personal" | "social";
@@ -18,6 +19,7 @@ const projects = [
     role: "Director · Cinematographer · Editor",
     category: "brand" as Category,
     image: p1,
+    video: brandFilm,
     type: "Brand Film",
   },
   {
@@ -118,26 +120,43 @@ export const Portfolio = () => {
               style={{ animationDelay: `${i * 0.08}s` }}
             >
               <div className="aspect-[4/5] overflow-hidden relative">
-                <img
-                  src={p.image}
-                  alt={p.title}
-                  loading="lazy"
-                  width={800}
-                  height={1000}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent opacity-90" />
-                <div className="absolute top-4 left-4 px-3 py-1 rounded-full glass text-xs text-foreground">
+                {p.video ? (
+                  <video
+                    src={p.video}
+                    poster={p.image}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="h-full w-full object-cover bg-card"
+                  />
+                ) : (
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    loading="lazy"
+                    width={800}
+                    height={1000}
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                )}
+                {!p.video && (
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent opacity-90 pointer-events-none" />
+                )}
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full glass text-xs text-foreground pointer-events-none">
                   {p.type}
                 </div>
-                <div className="absolute top-4 right-4 h-10 w-10 rounded-full glass grid place-items-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <ArrowUpRight className="h-4 w-4 text-foreground" />
-                </div>
-                <div className="absolute inset-0 grid place-items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <div className="h-16 w-16 rounded-full gradient-primary glow-primary grid place-items-center">
-                    <Play className="h-6 w-6 text-primary-foreground fill-primary-foreground ml-1" />
-                  </div>
-                </div>
+                {!p.video && (
+                  <>
+                    <div className="absolute top-4 right-4 h-10 w-10 rounded-full glass grid place-items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                      <ArrowUpRight className="h-4 w-4 text-foreground" />
+                    </div>
+                    <div className="absolute inset-0 grid place-items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="h-16 w-16 rounded-full gradient-primary glow-primary grid place-items-center">
+                        <Play className="h-6 w-6 text-primary-foreground fill-primary-foreground ml-1" />
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
               <div className="p-6">
                 <h3 className="font-display font-bold text-xl text-foreground mb-2">{p.title}</h3>

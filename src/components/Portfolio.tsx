@@ -35,8 +35,8 @@ const projects = [
   },
   {
     id: 3,
-    title: "Creator Setup Reel",
-    description: "Behind-the-scenes content showing the craft of mobile filmmaking.",
+    title: "Eye Catching Content",
+    description: "",
     role: "Cinematographer · Editor",
     category: "social" as Category,
     image: p3,
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     id: 6,
-    title: "Travel Diaries",
+    title: "Promotional Reels",
     description: "Personal cinematic travel series exploring landscape and emotion.",
     role: "Director · Cinematographer",
     category: "personal" as Category,

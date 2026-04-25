@@ -2,28 +2,28 @@ import { Briefcase } from "lucide-react";
 
 const experience = [
   {
-    period: "2022 — Present",
+    period: "2026 — Present",
     role: "Filmmaker & Content Creator",
     org: "Independent / Freelance",
     description:
-      "Directing, shooting, and editing cinematic content for brands and personal narratives — entirely on iPhone.",
+      "Creating cinematic content for brands and personal storytelling projects.",
     tags: ["Director", "Cinematographer", "Editor"],
   },
   {
-    period: "2023 — 2024",
-    role: "Video Producer",
+    period: "2023 — 2025",
+    role: "Video Producer & Event Coordinator",
     org: "Brand Collaborations",
     description:
-      "Managing projects end-to-end from concept and script to final delivery, coordinating teams and clients.",
-    tags: ["Producer", "Script Dev", "Client Mgmt"],
+      "Led projects from concept development and scripting to final delivery while managing teams and clients. Produced and covered multiple live events, ensuring seamless execution.",
+    tags: ["Producer", "Script Dev", "Events"],
   },
   {
-    period: "2022 — 2023",
-    role: "Social Media Content Creator",
-    org: "Creator Studio",
+    period: "2020 — 2023",
+    role: "Social Media Manager",
+    org: "Brand Campaigns",
     description:
-      "Built engagement-driven short-form content strategies and produced reels for lifestyle and creator brands.",
-    tags: ["Content Strategy", "Reels", "Social"],
+      "Scaled multiple social media pages organically and executed paid promotional campaigns for brands.",
+    tags: ["Organic Growth", "Paid Ads", "Strategy"],
   },
 ];
 

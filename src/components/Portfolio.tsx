@@ -63,13 +63,13 @@ const projects = [
   },
   {
     id: 6,
-    title: "Promotional Reels",
-    description: "Promotional reels delivering quality reels",
-    role: "Director · Cinematographer",
+    title: "Promotional Reel",
+    description: "Advertisement reel for brand",
+    role: "Creator · Editor",
     category: "personal" as Category,
     video: "https://res.cloudinary.com/dkqpecoxh/video/upload/v1777290673/promotion_xmw6bq.mp4",
     image: p6,
-    type: "Travel",
+    type: "Reel",
   },
 ];
 

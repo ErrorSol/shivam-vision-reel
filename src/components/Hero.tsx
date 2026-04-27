@@ -133,12 +133,12 @@ export const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in-slow">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in-slow">
         <div className="flex flex-col items-center gap-2 text-muted-foreground">
           <span className="text-xs uppercase tracking-widest">Scroll</span>
           <div className="h-10 w-px bg-gradient-to-b from-primary to-transparent" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

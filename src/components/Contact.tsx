@@ -82,7 +82,7 @@ export const Contact = () => {
               {[Instagram, Youtube, Linkedin].map((Icon, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href="https://www.instagram.com/filmscvam?igsh=MTVmdWZsdXg2ZTFvbQ=="
                   className="h-12 w-12 grid place-items-center rounded-xl glass hover:gradient-primary hover:text-primary-foreground transition-all hover:scale-110"
                   aria-label="Social link"
                 >

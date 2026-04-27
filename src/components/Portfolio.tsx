@@ -8,6 +8,10 @@ import p5 from "@/assets/portfolio-5.jpg";
 import p6 from "@/assets/portfolio-6.jpg";
 import brandFilm from "@/assets/brand-film.mp4";
 import shortFilm from "@/assets/short-film.mp4";
+import ugc from "@/assets/ugc.mp4"
+import eye from "@/assets/eyecatch.mp4"
+import live from "@/assets/Live.mp4"
+import promotion from "@/assets/promotion.mp4"
 import { cn } from "@/lib/utils";
 
 type Category = "all" | "brand" | "personal" | "social";
@@ -39,15 +43,17 @@ const projects = [
     description: "",
     role: "Cinematographer · Editor",
     category: "social" as Category,
+    video: eye,
     image: p3,
     type: "Reel",
   },
   {
     id: 4,
     title: "Live Event Coverage",
-    description: "Multi-camera event film delivering high-energy recap content.",
+    description: "Live Event Coverage film delivering Live content.",
     role: "Director · Producer",
     category: "brand" as Category,
+    video: live,
     image: p4,
     type: "Event",
   },
@@ -57,15 +63,17 @@ const projects = [
     description: "Authentic creator-style content for a lifestyle product launch.",
     role: "Creator · Editor",
     category: "social" as Category,
+    video: ugc,
     image: p5,
     type: "UGC",
   },
   {
     id: 6,
     title: "Promotional Reels",
-    description: "Personal cinematic travel series exploring landscape and emotion.",
+    description: "Promotional reels delivering quality reels",
     role: "Director · Cinematographer",
     category: "personal" as Category,
+    video: promotion,
     image: p6,
     type: "Travel",
   },

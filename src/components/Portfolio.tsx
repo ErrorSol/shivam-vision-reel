@@ -6,12 +6,6 @@ import p3 from "@/assets/portfolio-3.jpg";
 import p4 from "@/assets/portfolio-4.jpg";
 import p5 from "@/assets/portfolio-5.jpg";
 import p6 from "@/assets/portfolio-6.jpg";
-import brandFilm from "@/assets/brand-film.mp4";
-import shortFilm from "@/assets/short-film.mp4";
-import ugc from "@/assets/ugc.mp4"
-import eye from "@/assets/eyecatch.mp4"
-import live from "@/assets/Live.mp4"
-import promotion from "@/assets/promotion.mp4"
 import { cn } from "@/lib/utils";
 
 type Category = "all" | "brand" | "personal" | "social";
@@ -24,7 +18,7 @@ const projects = [
     role: "Director · Cinematographer · Editor",
     category: "brand" as Category,
     image: p1,
-    video: brandFilm,
+    video: "https://res.cloudinary.com/dkqpecoxh/video/upload/v1777291118/brand-film_c28ucb.mp4",
     type: "Brand Film",
   },
   {
@@ -34,7 +28,7 @@ const projects = [
     role: "Director · Editor",
     category: "personal" as Category,
     image: p2,
-    video: shortFilm,
+    video: "https://res.cloudinary.com/dkqpecoxh/video/upload/v1777291118/short-film_byeq15.mp4",
     type: "Short Film",
   },
   {
@@ -43,7 +37,7 @@ const projects = [
     description: "",
     role: "Cinematographer · Editor",
     category: "social" as Category,
-    video: eye,
+    video: "https://res.cloudinary.com/dkqpecoxh/video/upload/v1777290685/eyecatch_ryizoy.mp4",
     image: p3,
     type: "Reel",
   },
@@ -53,7 +47,7 @@ const projects = [
     description: "Live Event Coverage film delivering Live content.",
     role: "Director · Producer",
     category: "brand" as Category,
-    video: live,
+    video: "https://res.cloudinary.com/dkqpecoxh/video/upload/v1777290672/Live_l83jsa.mp4",
     image: p4,
     type: "Event",
   },
@@ -63,7 +57,7 @@ const projects = [
     description: "Authentic creator-style content for a lifestyle product launch.",
     role: "Creator · Editor",
     category: "social" as Category,
-    video: ugc,
+    video: "https://res.cloudinary.com/dkqpecoxh/video/upload/v1777290683/ugc_jwhoy1.mp4",
     image: p5,
     type: "UGC",
   },
@@ -73,7 +67,7 @@ const projects = [
     description: "Promotional reels delivering quality reels",
     role: "Director · Cinematographer",
     category: "personal" as Category,
-    video: promotion,
+    video: "https://res.cloudinary.com/dkqpecoxh/video/upload/v1777290673/promotion_xmw6bq.mp4",
     image: p6,
     type: "Travel",
   },
